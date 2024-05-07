@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- normalize css -->
+    <link rel = "stylesheet"
+    href = "{% static 'website/resources/normalize.css' %}">
+    <!-- font -->
+    <link rel = "stylesheet"
+    href = "{% static 'website/resources/font.css' %}">
+    <!-- animate css -->
+    <link rel = "stylesheet"
+    href = "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- Meus css -->
+    <link rel="stylesheet"
+    href="{% static 'website/css/style.css' %}">
+    <link rel="stylesheet"
+    href="{% static 'website/css/main.css' %}">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32"
+    href="{% static 'website/img/favicon-32x32.png' %}">
+    <title>PLACKSTEEL CONTRUÇÕES</title>
+</head>
+<body>
+    <!-- header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="my-container">
+                <div class="logo-e-toggler">
+                    <div class="navbar-logo">
+                        <img src="{% static 'website/img/logo.png' %}">
+                        <img class="logo_02" src="{% static 'website/img/logo_02.png' %}">
+                        {% comment %} <span> {% endcomment %}
+                            {% comment %} PLACKSTEEL CONTRUÇÕES {% endcomment %}
+                        {% comment %} </span> {% endcomment %}
+                    </div>
+                    <button type="button" class="navbar-toggler" id="navbar-toggler">
+                        <i class="bi bi-list"></i>
+                    </button>
+                </div>
+                <div class="navbar-collapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="{% url 'index_website' %}"
+                            class="nav-link">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link"
+                                >serviços
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#localizacao" class="nav-link">
+                                localização
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contato" class="nav-link">
+                                contato
+                            </a>
+                        </li>
+                    </ul>                        
+                </div>
+            </div>
+        </nav>
+        <div class="conteudo-base">
+            {% block mainusuario %}
+            {% endblock %}
+        </div>
+        <div class = "hero-div center container">
+            <h1 class="animate__animated animate__fadeInDown  animate__slow">
+                PLACKSTEEL CONSTRUÇÕES
+            </h1>
+            <h2 class="animate__animated animate__fadeInDown  animate__slow">
+                DRYWALL - FORROS - FACHADAS
+            </h2>
+            <p class = "animate__animated animate__fadeInUp animate__slow">
+                Soluções em construção a seco.
+            </p>
+            <div class = "hero-btns animate__animated animate__fadeInUp animate__slow">
+                <button type = "button" class = "btn-trans">
+                    Sobre Nós
+                </button>
+                <button type = "button" class = "btn-white">
+                    Saiba Mais
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- end of header -->
+    <div class="teste">
+        <h1>DRYWALL</h1>
+    </div>
+    <div class="foto2">
+    </div>
+    <div class="teste2">
+    </div>
+    <div class="localizacao ancora-margin-superior" id="localizacao">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1828.6560526403396!2d-46.603747011487485!3d-23.557231636021253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5954f49bc92b%3A0x5d79d65337c0837d!2sTransportadora%20Efetiva%20Ltda!5e0!3m2!1spt-BR!2sbr!4v1682518329654!5m2!1spt-BR!2sbr"
+        class="map-localizacao"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="footer" id="contato">
+        <div class="phones">
+            <span>E-Mail: admin@placksteel.com.br</span>
+            <span>Telefone: (11) 99999-9999</span>
+            <span>Whatsapp: (11) 99999-9999</span>
+        </div>
+        <div class="andress">
+            <span>Rua do meu endereço, XXX</span>
+            <span>Bairro - São Paulo</span>
+            <span>CEP 00000-000 - SP</span>
+        </div>
+    </div>
+</body>
+
+<!-- jQuery -->
+<script src="{% static 'website/js/jquery-3.5.1.min.js' %}"></script>
+<script src="{% static 'website/js/website.js' %}"></script>
+<script src="{% static 'website/js/bootstrap.min.js' %}"></script>
