@@ -243,6 +243,10 @@ section {
 /* detail */
 
 .detail {
+    background: #121212;
+    height: 100vh;
+    text-align: center;
+}
     background: var(--white-smoke);
 }
 
