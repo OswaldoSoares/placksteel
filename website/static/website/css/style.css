@@ -252,6 +252,14 @@ section {
     background: var(--white-smoke);
 }
 
+.detail h1 {
+    color: var(--ps-orange);
+    font-size: 2rem;
+    opacity: 0.8;
+    font-weight: 800;
+    padding: 2rem 0;
+}
+
 .detail-item {
     background: #fff;
     text-align: center;
