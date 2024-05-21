@@ -320,14 +320,6 @@ section {
     height: 2.5px;
 }
 
-.teste {
-    height: 50vh;
-}
-
-.teste2 {
-    height: 50vh;
-}
-
 .foto2 {
     background-image: url("/static/website/img/wallpaper02.jpg");
     min-height: 100vh;
