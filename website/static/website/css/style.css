@@ -247,6 +247,8 @@ section {
     height: 100vh;
     text-align: center;
 }
+
+.detail-sobre-nos {
     background: var(--white-smoke);
 }
 
