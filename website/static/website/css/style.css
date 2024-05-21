@@ -315,9 +315,9 @@ section {
 }
 
 .line {
-    width: 45px;
+    width: 120px;
     margin: 1.2rem auto;
-    background: var(--mount-meadow);
+    background: var(--ps-orange);
     height: 2.5px;
 }
 
