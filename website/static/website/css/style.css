@@ -308,9 +308,10 @@ section {
 }
 
 .detail-item h2 {
+    color: black;
     font-size: 1.4rem;
     opacity: 0.8;
-    font-weight: 300;
+    font-weight: 800;
 }
 
 .line {
