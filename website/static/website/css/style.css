@@ -323,15 +323,7 @@ section {
 
 .foto2 {
     background-image: url("/static/website/img/wallpaper02.jpg");
-    min-height: 100vh;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    color: #fff;
     display: flex;
-    flex-direction: column;
-    justify-content: stretch;
 }
 
 .localizacao {
