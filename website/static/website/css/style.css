@@ -341,18 +341,21 @@ section {
 
 }
 
-.ancora-margin-superior[id] {
-    scroll-margin-top: 72px;
-}
-
 /* #### Media Queries #### */
 
 @media screen and (min-width: 768px) {
     .detail .row {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
+
+    .detail-sobre-nos .row {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
     .detail-item {
         margin: 0;
     }
