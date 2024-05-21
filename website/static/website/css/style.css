@@ -294,8 +294,17 @@ section {
     transform: translateY(-5px);
 }
 
-.detail-item span {
+.detail-item i {
     font-size: 2.5rem;
+    color: var(--ps-orange);
+}
+
+.detail-item-sobre-nos i {
+    font-size: 4rem;
+}
+
+.detail-item-sobre-nos p {
+    text-align: justify;
 }
 
 .detail-item h2 {
