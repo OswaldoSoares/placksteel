@@ -322,14 +322,101 @@ section {
 }
 
 .foto2 {
-    background-image: url("/static/website/img/wallpaper02.jpg");
+    background-image: url("/static/website/img/image_02.jpg");
 }
 
 .foto3 {
-   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(100, 100, 100, 0.3)), url("/static/website/img/wallpaper01.jpeg");
+    background-image: url("/static/website/img/image_03.jpg");
     display: flex;
     align-items: center;
     justify-content: start; 
+}
+
+/* WORKS */
+.works {
+    background-image: linear-gradient(rgba(245, 134, 52, 0.5), rgba(245, 134, 52, 0.5)), url("/static/website/img/obra_1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    scroll-margin-top: 15px;
+}
+
+.works .title h2 {
+    color: #fff;
+}
+
+.carousel-container {
+    overflow: hidden; /* Evita que o conteúdo fora da área visível seja mostrado */
+    width: 100%; /* Garante que o carrossel ocupe a largura total */
+    position: relative;
+}
+
+.works-container {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    transition: transform 0.5s ease;
+}
+
+.work-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 15px;
+    text-align: center;
+    flex: 0 0 auto;
+}
+
+.work-title {
+    font-size: 18px;
+    background-color: aliceblue;
+}
+
+.work-city {
+    font-size: 10px;
+    padding-top: 5px;
+    margin-bottom: 10px;
+}
+
+.image-carousel {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 10px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eee;
+}
+
+.image-carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+    position: absolute;
+}
+
+.description {
+    font-size: 14px;
+    color: var(--ps-black);
+}
+
+.works .scroll {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.works .scroll_button {
+    font-size: 3rem;
+    color: #fff;
 }
 
 .localizacao {
